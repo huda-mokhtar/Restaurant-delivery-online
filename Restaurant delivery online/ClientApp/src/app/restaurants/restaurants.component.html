@@ -1,0 +1,45 @@
+<section id="explore" class="explore">
+  <div class="container">
+    <div class="explore-content"  >
+      <div class="row">
+        <div class="col-md-4 col-sm-6" *ngFor="let item of restaurents; ">
+          <div class="single-explore-item">
+            <div class="single-explore-img">
+              <img src="../../assets/Images/{{item.image}}" style="height:19rem" alt="Restaurant image">
+            </div>
+            <div class="single-explore-txt bg-theme-2">
+              <h2>{{item.name}}</h2>
+              <p class="explore-rating-price">
+                <span class="explore-rating">4.5</span>
+                <a href="#"> 8 ratings</a>
+              </p>
+              <div class="explore-person">
+                <div class="row">
+                  <div class="col-sm-10">
+                    <p>
+                      {{item.description}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="explore-open-close-part">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <a class="btn btn-dark" [routerLink]="['/AllMeals/',item.id]">Menu</a>
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="explore-map-icon">
+                      <a href="#"><i data-feather="map-pin"></i></a>
+                      <a href="#"><i data-feather="upload"></i></a>
+                      <a href="#"><i data-feather="heart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

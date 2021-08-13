@@ -1,0 +1,20 @@
+.header {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: Rza;
+  font-style: italic;
+}
+
+.orangeBorder {
+  border: 1px solid #ffc107;
+  box-shadow: 0 0 0 0.1rem #ffdf80;
+  ;
+  border-radius: 10px;
+}
+
+.newMenu {
+  font-size: larger;
+  font-weight: 490;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
